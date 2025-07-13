@@ -182,7 +182,7 @@ themes = new Listing {
           font_weight = null
         }
         constructor {
-          color = "#ffae65"
+          color = colors.orange.n300
         }
       }
       players = new Listing {

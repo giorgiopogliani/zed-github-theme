@@ -194,24 +194,11 @@ cyan {
   n950 = "#083344"
 }
 
-function hexCharToInt(c: String): Int =
-  if (c == "0") 0
-  else if (c == "1") 1
-  else if (c == "2") 2
-  else if (c == "3") 3
-  else if (c == "4") 4
-  else if (c == "5") 5
-  else if (c == "6") 6
-  else if (c == "7") 7
-  else if (c == "8") 8
-  else if (c == "9") 9
-  else if (c == "A" || c == "a") 10
-  else if (c == "B" || c == "b") 11
-  else if (c == "C" || c == "c") 12
-  else if (c == "D" || c == "d") 13
-  else if (c == "E" || c == "e") 14
-  else if (c == "F" || c == "f") 15
-  else 0
+function lighten(hex: String, percent: Float): String =
+  "#" +
+  intToHex(lightenComponent(parseComponent(hex, 1), percent)) +
+  intToHex(lightenComponent(parseComponent(hex, 3), percent)) +
+  intToHex(lightenComponent(parseComponent(hex, 5), percent))
 
 function parseComponent(hex: String, start: Int): Int =
   hexCharToInt(hex.substring(start, start + 1)) * 16 +
@@ -219,6 +206,9 @@ function parseComponent(hex: String, start: Int): Int =
 
 function lightenComponent(value: Int, percent: Float): Int =
   math.min(255, value + ((255 - value) * (percent / 100.0)).toInt())
+
+function intToHex(value: Int): String =
+  digitToHexChar(value ~/ 16) + digitToHexChar(value % 16)
 
 function digitToHexChar(d: Int): String =
   if (d == 0) "0"
@@ -238,11 +228,21 @@ function digitToHexChar(d: Int): String =
   else if (d == 14) "E"
   else "F"
 
-function intToHex(value: Int): String =
-  digitToHexChar(value ~/ 16) + digitToHexChar(value % 16)
-
-function lighten(hex: String, percent: Float): String =
-  "#" +
-  intToHex(lightenComponent(parseComponent(hex, 1), percent)) +
-  intToHex(lightenComponent(parseComponent(hex, 3), percent)) +
-  intToHex(lightenComponent(parseComponent(hex, 5), percent))
+function hexCharToInt(c: String): Int =
+  if (c == "0") 0
+  else if (c == "1") 1
+  else if (c == "2") 2
+  else if (c == "3") 3
+  else if (c == "4") 4
+  else if (c == "5") 5
+  else if (c == "6") 6
+  else if (c == "7") 7
+  else if (c == "8") 8
+  else if (c == "9") 9
+  else if (c == "A" || c == "a") 10
+  else if (c == "B" || c == "b") 11
+  else if (c == "C" || c == "c") 12
+  else if (c == "D" || c == "d") 13
+  else if (c == "E" || c == "e") 14
+  else if (c == "F" || c == "f") 15
+  else 0
