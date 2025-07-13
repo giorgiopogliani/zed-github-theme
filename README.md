@@ -1,7 +1,6 @@
 # Github Inspired Theme for Zed
 
-to build the theme you will need Pkl installed on your system. You can install it using pip:
-
+to build the theme you will need Pkl installed on your system. You can install it using brew:
 ```bash
 brew install pkl
 ```
