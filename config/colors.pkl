@@ -2,7 +2,7 @@ module Colors
 
 import "pkl:math"
 
-debug = "#FF00"
+debug = "#FF0000"
 
 white = "#FFFFFF"
 
