@@ -1,0 +1,197 @@
+amends "config/theme.pkl"
+
+import "config/colors.pkl"
+import "config/utils.pkl"
+
+name = "Github Inspired Theme 2"
+
+author = "Giorgio Pogliani"
+
+themes = new Listing {
+  new Theme {
+    name = "My Github Light v2"
+    appearance = "light"
+    style {
+      border = colors.gray.n100
+      `border.variant` = colors.gray.n100
+      `border.focused` = colors.blue.n300
+      `border.selected` = colors.gray.n200
+      `border.transparent` = colors.gray.n50
+      `border.disabled` = colors.gray.n200
+      `elevated_surface.background` = colors.gray.n50
+      `surface.background` = "#f0f3f6"
+      background = colors.white
+      `element.background` = colors.gray.n50
+      `element.hover` = colors.blue.n50
+      `element.active` = null
+      `element.selected` = null
+      `element.disabled` = null
+      `drop_target.background` = null
+      `ghost_element.background` = null
+      `ghost_element.hover` = colors.blue.n50
+      `ghost_element.active` = null
+      `ghost_element.selected` = colors.gray.n100
+      `ghost_element.disabled` = null
+      text = colors.gray.n950
+      `text.muted` = colors.gray.n950
+      `text.placeholder` = colors.gray.n950
+      `text.disabled` = colors.gray.n500
+      `text.accent` = null
+      icon = null
+      `icon.muted` = null
+      `icon.disabled` = null
+      `icon.placeholder` = null
+      `icon.accent` = null
+      `title_bar.background` = colors.gray.n50
+      `status_bar.background` = colors.gray.n50
+      `tab_bar.background` = colors.white
+      `tab.inactive_background` = colors.white
+      `toolbar.background` = colors.gray.n50
+      `tab.active_background` = colors.white
+      `search.match_background` = null
+      `panel.background` = colors.white
+      `panel.focused_border` = null
+      `pane_group.border` = null
+      `scrollbar_thumb.background` = colors.gray.n500 + "33"
+      `scrollbar.thumb.hover_background` = colors.gray.n600 + "44"
+      `scrollbar.thumb.border` = colors.gray.n900 + "33"
+      `scrollbar.track.background` = colors.white
+      `scrollbar.track.border` = colors.gray.n100
+      error = colors.rose.n400
+      warning = colors.amber.n300
+      `warning.background` = colors.yellow.n800
+      `warning.border` = colors.yellow.n800
+      `editor.background` = colors.white
+      `editor.foreground` = colors.gray.n950
+      `editor.gutter.background` = colors.gray.n50
+      `editor.subheader.background` = null
+      `editor.active_line.background` = colors.gray.n100 + "77"
+      `editor.highlighted_line.background` = null
+      `editor.line_number` = colors.gray.n500
+      `editor.active_line_number` = colors.gray.n950
+      `editor.invisible` = colors.gray.n200
+      `editor.wrap_guide` = colors.gray.n200
+      `editor.active_wrap_guide` = colors.gray.n200
+      `editor.document_highlight.read_background` = colors.amber.n300 + "44"
+      `editor.document_highlight.write_background` = null
+      `terminal.background` = colors.gray.n50
+      `terminal.foreground` = colors.gray.n950
+      `terminal.bright_foreground` = colors.white
+      `terminal.dim_foreground` = colors.gray.n500
+      `terminal.ansi.black` = null
+      `terminal.ansi.red` = null
+      `terminal.ansi.green` = null
+      `terminal.ansi.yellow` = null
+      `terminal.ansi.blue` = null
+      `terminal.ansi.magenta` = null
+      `terminal.ansi.cyan` = null
+      `terminal.ansi.white` = colors.gray.n950
+      `terminal.ansi.bright_black` = colors.gray.n950
+      `terminal.ansi.bright_red` = null
+      `terminal.ansi.bright_green` = null
+      `terminal.ansi.bright_yellow` = null
+      `terminal.ansi.bright_blue` = null
+      `terminal.ansi.bright_magenta` = null
+      `terminal.ansi.bright_cyan` = null
+      `terminal.ansi.bright_white` = null
+      `link_text.hover` = colors.gray.n200
+      `hidden` = colors.gray.n400
+      hint = colors.gray.n400
+      ignored = colors.gray.n500
+      modified = colors.blue.n400
+      conflict = "#ffab70"
+      created = "#4ade80"
+      deleted = "#ea4a5a"
+      `predictive.background` = colors.gray.n500
+      syntax {
+        comment {
+          color = colors.gray.n500
+          font_style = null
+          font_weight = null
+        }
+        number {
+          color = colors.blue.n600
+          font_style = null
+          font_weight = null
+        }
+        builtin {
+          color = "#0550ae"
+        }
+        string {
+          color = "#0a3069"
+          font_style = null
+          font_weight = null
+        }
+        `function` {
+          color = "#6f42c1"
+          font_style = null
+          font_weight = null
+        }
+        symbols {
+          color = "#0a3069"
+        }
+        keyword {
+          color = colors.lighten(colors.rose.n700, 10.0)
+        }
+        tag {
+          color = colors.rose.n500
+        }
+        punctuation {
+          color = colors.gray.n950
+          font_style = null
+          font_weight = null
+        }
+        `punctuation.delimiter` {
+          color = colors.gray.n950
+          font_style = null
+          font_weight = null
+        }
+        label {
+          color = "#c00"
+          font_style = null
+          font_weight = null
+        }
+        boolean {
+          color = colors.blue.n600
+          font_style = null
+          font_weight = null
+        }
+        operator {
+          color = "#0550ae"
+          font_style = null
+          font_weight = null
+        }
+        property {
+          color = "#0550ae"
+          font_style = null
+          font_weight = null
+        }
+        variable {
+          color = colors.gray.n950
+          font_style = null
+          font_weight = null
+        }
+        constant {
+          color = colors.amber.n800
+          font_style = null
+          font_weight = null
+        }
+        type {
+          color = colors.lighten(colors.rose.n700, 10.0)
+          font_style = "italic"
+          font_weight = null
+        }
+        constructor {
+          color = colors.amber.n800
+        }
+      }
+      players = new Listing {
+        new PlayerColor {
+          cursor = "#4B77BE"
+          selection = "#89C4F444"
+          background = "#1C364A"
+        }
+      }
+    }
+  }
+}

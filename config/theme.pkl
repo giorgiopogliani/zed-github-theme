@@ -1,0 +1,541 @@
+/// Zed Theme Schema v0.1.0
+/// Converted from https://zed.dev/schema/themes/v0.1.0.json
+module Config
+
+/// The JSON schema reference
+`$schema`: String =  "https://zed.dev/schema/themes/v0.2.0.json"
+
+/// The name of the theme
+name: String
+
+/// The author of the theme
+author: String
+
+/// The themes configuration for the theme
+themes: Listing<Theme>
+
+open class Theme {
+  name: String
+
+  /// The appearance of the theme
+  appearance: "light" | "dark"
+
+  /// The style configuration for the theme
+  style: Style
+}
+
+/// Style configuration for the theme
+class Style {
+  /// Background color
+  background: String?
+
+  /// Foreground color
+  foreground: String?
+
+  /// Border color
+  border: String?
+
+  /// Border variant color
+  `border.variant`: String?
+
+  /// Border focused color
+  `border.focused`: String?
+
+  /// Border selected color
+  `border.selected`: String?
+
+  /// Border transparent color
+  `border.transparent`: String?
+
+  /// Border disabled color
+  `border.disabled`: String?
+
+  /// Elevated surface background color
+  `elevated_surface.background`: String?
+
+  /// Surface background color
+  `surface.background`: String?
+
+  /// Element background color
+  `element.background`: String?
+
+  /// Element hover background color
+  `element.hover`: String?
+
+  /// Element active background color
+  `element.active`: String?
+
+  /// Element selected background color
+  `element.selected`: String?
+
+  /// Element disabled background color
+  `element.disabled`: String?
+
+  /// Drop target background color
+  `drop_target.background`: String?
+
+  /// Ghost element background color
+  `ghost_element.background`: String?
+
+  /// Ghost element hover background color
+  `ghost_element.hover`: String?
+
+  /// Ghost element active background color
+  `ghost_element.active`: String?
+
+  /// Ghost element selected background color
+  `ghost_element.selected`: String?
+
+  /// Ghost element disabled background color
+  `ghost_element.disabled`: String?
+
+  /// Text color
+  text: String?
+
+  /// Text muted color
+  `text.muted`: String?
+
+  /// Text placeholder color
+  `text.placeholder`: String?
+
+  /// Text disabled color
+  `text.disabled`: String?
+
+  /// Text accent color
+  `text.accent`: String?
+
+  /// Icon color
+  icon: String?
+
+  /// Icon muted color
+  `icon.muted`: String?
+
+  /// Icon disabled color
+  `icon.disabled`: String?
+
+  /// Icon placeholder color
+  `icon.placeholder`: String?
+
+  /// Icon accent color
+  `icon.accent`: String?
+
+  /// Link text hover color
+  `link_text.hover`: String?
+
+  /// Conflict color
+  `conflict`: String?
+
+  /// Conflict background color
+  `conflict.background`: String?
+
+  /// Conflict border color
+  `conflict.border`: String?
+
+  /// Created color
+  `created`: String?
+
+  /// Created background color
+  `created.background`: String?
+
+  /// Created border color
+  `created.border`: String?
+
+  /// Deleted color
+  `deleted`: String?
+
+  /// Deleted background color
+  `deleted.background`: String?
+
+  /// Deleted border color
+  `deleted.border`: String?
+
+  /// Error color
+  `error`: String?
+
+  /// Error background color
+  `error.background`: String?
+
+  /// Error border color
+  `error.border`: String?
+
+  /// Hidden color
+  `hidden`: String?
+
+  /// Hidden background color
+  `hidden.background`: String?
+
+  /// Hidden border color
+  `hidden.border`: String?
+
+  /// Hint color
+  `hint`: String?
+
+  /// Hint background color
+  `hint.background`: String?
+
+  /// Hint border color
+  `hint.border`: String?
+
+  /// Ignored color
+  `ignored`: String?
+
+  /// Ignored background color
+  `ignored.background`: String?
+
+  /// Ignored border color
+  `ignored.border`: String?
+
+  /// Info color
+  `info`: String?
+
+  /// Info background color
+  `info.background`: String?
+
+  /// Info border color
+  `info.border`: String?
+
+  /// Modified color
+  `modified`: String?
+
+  /// Modified background color
+  `modified.background`: String?
+
+  /// Modified border color
+  `modified.border`: String?
+
+  /// Predictive color
+  `predictive`: String?
+
+  /// Predictive background color
+  `predictive.background`: String?
+
+  /// Predictive border color
+  `predictive.border`: String?
+
+  /// Renamed color
+  `renamed`: String?
+
+  /// Renamed background color
+  `renamed.background`: String?
+
+  /// Renamed border color
+  `renamed.border`: String?
+
+  /// Success color
+  `success`: String?
+
+  /// Success background color
+  `success.background`: String?
+
+  /// Success border color
+  `success.border`: String?
+
+  /// Unreachable color
+  `unreachable`: String?
+
+  /// Unreachable background color
+  `unreachable.background`: String?
+
+  /// Unreachable border color
+  `unreachable.border`: String?
+
+  /// Warning color
+  `warning`: String?
+
+  /// Warning background color
+  `warning.background`: String?
+
+  /// Warning border color
+  `warning.border`: String?
+
+  /// Status bar background color
+  `status_bar.background`: String?
+
+  /// Title bar background color
+  `title_bar.background`: String?
+
+  /// Title bar inactive background color
+  `title_bar.inactive_background`: String?
+
+  /// Toolbar background color
+  `toolbar.background`: String?
+
+  /// Tab bar background color
+  `tab_bar.background`: String?
+
+  /// Tab inactive background color
+  `tab.inactive_background`: String?
+
+  /// Tab active background color
+  `tab.active_background`: String?
+
+  /// Search match background color
+  `search.match_background`: String?
+
+  /// Panel background color
+  `panel.background`: String?
+
+  /// Panel focused border color
+  `panel.focused_border`: String?
+
+  /// Pane group border color
+  `pane_group.border`: String?
+
+  /// Pane focused border color
+  `pane.focused_border`: String?
+
+  /// Scrollbar thumb background color (alternative naming)
+  `scrollbar_thumb.background`: String?
+
+  /// Scrollbar thumb background color
+  `scrollbar.thumb.background`: String?
+
+  /// Scrollbar thumb hover background color
+  `scrollbar.thumb.hover_background`: String?
+
+  /// Scrollbar thumb border color
+  `scrollbar.thumb.border`: String?
+
+  /// Scrollbar track background color
+  `scrollbar.track.background`: String?
+
+  /// Scrollbar track border color
+  `scrollbar.track.border`: String?
+
+  /// Editor foreground color
+  `editor.foreground`: String?
+
+  /// Editor background color
+  `editor.background`: String?
+
+  /// Editor gutter background color
+  `editor.gutter.background`: String?
+
+  /// Editor subheader background color
+  `editor.subheader.background`: String?
+
+  /// Editor active line background color
+  `editor.active_line.background`: String?
+
+  /// Editor highlighted line background color
+  `editor.highlighted_line.background`: String?
+
+  /// Editor line number color
+  `editor.line_number`: String?
+
+  /// Editor active line number color
+  `editor.active_line_number`: String?
+
+  /// Editor invisible characters color
+  `editor.invisible`: String?
+
+  /// Editor wrap guide color
+  `editor.wrap_guide`: String?
+
+  /// Editor active wrap guide color
+  `editor.active_wrap_guide`: String?
+
+  /// Editor document highlight read background color
+  `editor.document_highlight.read_background`: String?
+
+  /// Editor document highlight write background color
+  `editor.document_highlight.write_background`: String?
+
+  /// Terminal background color
+  `terminal.background`: String?
+
+  /// Terminal foreground color
+  `terminal.foreground`: String?
+
+  /// Terminal bright foreground color
+  `terminal.bright_foreground`: String?
+
+  /// Terminal dim foreground color
+  `terminal.dim_foreground`: String?
+
+  /// Terminal ANSI colors
+  `terminal.ansi.black`: String?
+  `terminal.ansi.red`: String?
+  `terminal.ansi.green`: String?
+  `terminal.ansi.yellow`: String?
+  `terminal.ansi.blue`: String?
+  `terminal.ansi.magenta`: String?
+  `terminal.ansi.cyan`: String?
+  `terminal.ansi.white`: String?
+  `terminal.ansi.bright_black`: String?
+  `terminal.ansi.bright_red`: String?
+  `terminal.ansi.bright_green`: String?
+  `terminal.ansi.bright_yellow`: String?
+  `terminal.ansi.bright_blue`: String?
+  `terminal.ansi.bright_magenta`: String?
+  `terminal.ansi.bright_cyan`: String?
+  `terminal.ansi.bright_white`: String?
+
+  /// Syntax highlighting colors
+  syntax: SyntaxHighlighting?
+
+  /// Players colors for collaboration
+  players: Listing<PlayerColor>?
+}
+
+/// Syntax highlighting configuration
+class SyntaxHighlighting {
+  /// Attribute color
+  attribute: SyntaxColor?
+
+  /// Boolean color
+  boolean: SyntaxColor?
+
+  /// Builtin color
+  builtin: SyntaxColor?
+
+  /// Comment color
+  comment: SyntaxColor?
+
+  /// Comment color
+  symbols: SyntaxColor?
+
+  /// Comment documentation color
+  `comment.doc`: SyntaxColor?
+
+  /// Constant color
+  constant: SyntaxColor?
+
+  /// Constructor color
+  constructor: SyntaxColor?
+
+  /// Embedded color
+  embedded: SyntaxColor?
+
+  /// Emphasis color
+  emphasis: SyntaxColor?
+
+  /// Emphasis strong color
+  `emphasis.strong`: SyntaxColor?
+
+  /// Enum color
+  enum: SyntaxColor?
+
+  /// Function color
+  `function`: SyntaxColor?
+
+  /// Hint color
+  hint: SyntaxColor?
+
+  /// Keyword color
+  keyword: SyntaxColor?
+
+  /// Label color
+  label: SyntaxColor?
+
+  /// Link text color
+  `link_text`: SyntaxColor?
+
+  /// Link URI color
+  `link_uri`: SyntaxColor?
+
+  /// Number color
+  number: SyntaxColor?
+
+  /// Operator color
+  operator: SyntaxColor?
+
+  /// Predictive color
+  predictive: SyntaxColor?
+
+  /// Preproc color
+  preproc: SyntaxColor?
+
+  /// Primary color
+  primary: SyntaxColor?
+
+  /// Property color
+  property: SyntaxColor?
+
+  /// Punctuation color
+  punctuation: SyntaxColor?
+
+  /// Punctuation bracket color
+  `punctuation.bracket`: SyntaxColor?
+
+  /// Punctuation delimiter color
+  `punctuation.delimiter`: SyntaxColor?
+
+  /// Punctuation list marker color
+  `punctuation.list_marker`: SyntaxColor?
+
+  /// Punctuation special color
+  `punctuation.special`: SyntaxColor?
+
+  /// String color
+  string: SyntaxColor?
+
+  /// String escape color
+  `string.escape`: SyntaxColor?
+
+  /// String regex color
+  `string.regex`: SyntaxColor?
+
+  /// String special color
+  `string.special`: SyntaxColor?
+
+  /// String special symbol color
+  `string.special.symbol`: SyntaxColor?
+
+  /// Tag color
+  tag: SyntaxColor?
+
+  /// Text literal color
+  `text.literal`: SyntaxColor?
+
+  /// Title color
+  title: SyntaxColor?
+
+  /// Type color
+  type: SyntaxColor?
+
+  /// Variable color
+  variable: SyntaxColor?
+
+  /// Variable special color
+  `variable.special`: SyntaxColor?
+
+  /// Variant color
+  variant: SyntaxColor?
+}
+
+/// Color configuration for syntax highlighting
+class SyntaxColor {
+  /// Color value (hex, rgb, etc.)
+  color: String?
+
+  /// Font style
+  `font_style`: String? = null
+
+  /// Font weight
+  `font_weight`: ("normal" | "bold" | "light" | "medium" | "semi_bold" | "extra_bold")? = null
+
+  /// Underline style
+  underline: UnderlineStyle?
+}
+
+/// Underline style configuration
+class UnderlineStyle {
+  /// Underline thickness
+  thickness: String?
+
+  /// Underline color
+  color: String?
+}
+
+/// Player color configuration for collaboration
+class PlayerColor {
+  /// Cursor color
+  cursor: String?
+
+  /// Background color
+  background: String?
+
+  /// Selection color
+  selection: String?
+}

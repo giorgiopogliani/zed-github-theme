@@ -1,0 +1,197 @@
+amends "config/theme.pkl"
+
+import "config/colors.pkl"
+import "config/utils.pkl"
+
+name = "Github Inspired Theme 2"
+
+author = "Giorgio Pogliani"
+
+themes = new Listing {
+  new Theme {
+    name = "My Github Dark v2"
+    appearance = "dark"
+    style {
+      border = colors.gray.n950
+      `border.variant` = colors.gray.n950
+      `border.focused` = colors.blue.n600
+      `border.selected` = colors.gray.n950
+      `border.transparent` = colors.gray.n950
+      `border.disabled` = colors.gray.n950
+      `elevated_surface.background` = colors.lighten(colors.gray.n950, 3.5)
+      `surface.background` = colors.gray.n950
+      background = colors.gray.n950
+      `element.background` = colors.gray.n950
+      `element.hover` = colors.gray.n950
+      `element.active` = null
+      `element.selected` = null
+      `element.disabled` = null
+      `drop_target.background` = null
+      `ghost_element.background` = null
+      `ghost_element.hover` = colors.gray.n800 + "99"
+      `ghost_element.active` = null
+      `ghost_element.selected` = colors.gray.n950
+      `ghost_element.disabled` = null
+      text = colors.gray.n300
+      `text.muted` = colors.gray.n300
+      `text.placeholder` = colors.gray.n300
+      `text.disabled` = colors.gray.n500
+      `text.accent` = colors.blue.n300
+      icon = null
+      `icon.muted` = null
+      `icon.disabled` = null
+      `icon.placeholder` = null
+      `icon.accent` = null
+      `title_bar.background` = colors.lighten(colors.gray.n950, 0.0)
+      `status_bar.background` = colors.lighten(colors.gray.n950, 0.0)
+      `tab_bar.background` = colors.gray.n950
+      `tab.inactive_background` = colors.gray.n950
+      `toolbar.background` = colors.lighten(colors.gray.n950, 4.0)
+      `tab.active_background` = colors.lighten(colors.gray.n950, 4.0)
+      `search.match_background` = null
+      `panel.background` = colors.lighten(colors.gray.n950, 4.0)
+      `panel.focused_border` = null
+      `pane_group.border` = null
+      `scrollbar_thumb.background` = colors.gray.n950
+      `scrollbar.thumb.hover_background` = colors.lighten(colors.gray.n950, 4.0)
+      `scrollbar.thumb.border` = colors.lighten(colors.gray.n950, 4.0)
+      `scrollbar.track.background` = colors.lighten(colors.gray.n950, 4.0)
+      `scrollbar.track.border` = colors.lighten(colors.gray.n950, 4.0)
+      error = colors.red.n200
+      warning = colors.yellow.n200
+      `warning.background` = colors.gray.n900 + "44"
+      `warning.border` = colors.yellow.n600 + "44"
+      `editor.background` = colors.gray.n950
+      `editor.foreground` = colors.gray.n100
+      `editor.gutter.background` = colors.lighten(colors.gray.n950, 4.0)
+      `editor.subheader.background` = null
+      `editor.active_line.background` = colors.gray.n900 + "AA"
+      `editor.highlighted_line.background` = null
+      `editor.line_number` = colors.gray.n700
+      `editor.active_line_number` = colors.gray.n400
+      `editor.invisible` = null
+      `editor.wrap_guide` = colors.gray.n950
+      `editor.active_wrap_guide` = colors.gray.n950
+      `editor.document_highlight.read_background` = colors.gray.n900
+      `editor.document_highlight.write_background` = null
+      `terminal.background` = colors.lighten(colors.gray.n950, 4.0)
+      `terminal.foreground` = colors.gray.n100
+      `terminal.bright_foreground` = colors.white
+      `terminal.dim_foreground` = colors.gray.n200
+      `terminal.ansi.black` = null
+      `terminal.ansi.red` = null
+      `terminal.ansi.green` = null
+      `terminal.ansi.yellow` = null
+      `terminal.ansi.blue` = null
+      `terminal.ansi.magenta` = null
+      `terminal.ansi.cyan` = null
+      `terminal.ansi.white` = colors.gray.n100
+      `terminal.ansi.bright_black` = colors.gray.n950
+      `terminal.ansi.bright_red` = null
+      `terminal.ansi.bright_green` = null
+      `terminal.ansi.bright_yellow` = null
+      `terminal.ansi.bright_blue` = null
+      `terminal.ansi.bright_magenta` = null
+      `terminal.ansi.bright_cyan` = null
+      `terminal.ansi.bright_white` = null
+      `link_text.hover` = colors.blue.n100
+      `hidden` = colors.gray.n400 + "66"
+      hint = colors.gray.n400
+      ignored = colors.gray.n500 + "66"
+      modified = colors.yellow.n100 + "66"
+      conflict = colors.yellow.n300 + "66"
+      created = colors.green.n300 + "66"
+      deleted = colors.red.n300 + "66"
+      `predictive.background` =  colors.gray.n700
+      syntax {
+        comment {
+          color = colors.gray.n600
+          font_style = null
+          font_weight = null
+        }
+        number {
+          color = colors.lighten(colors.blue.n400, 5.0)
+          font_style = null
+          font_weight = null
+        }
+        builtin {
+          color = colors.red.n400
+        }
+        string {
+          color = colors.lighten(colors.blue.n300, 1.5)
+          font_style = "blue"
+          font_weight = null
+        }
+        `function` {
+          color = colors.purple.n300
+          font_style = null
+          font_weight = null
+        }
+        symbols {
+          color = colors.lighten(colors.blue.n300, 1.5)
+        }
+        keyword {
+          color = colors.lighten(colors.red.n500, 40.0)
+        }
+        tag {
+          color = colors.red.n400
+        }
+        punctuation {
+          color = colors.cyan.n100
+          font_style = null
+          font_weight = null
+        }
+        `punctuation.delimiter` {
+          color = colors.white
+          font_style = null
+          font_weight = null
+        }
+        label {
+          color = colors.red.n400
+          font_style = null
+          font_weight = null
+        }
+        boolean {
+          color = colors.blue.n100
+          font_style = null
+          font_weight = null
+        }
+        operator {
+          color = colors.red.n400
+          font_style = null
+          font_weight = null
+        }
+        property {
+          color = colors.lighten(colors.green.n500, 30.0)
+          font_style = null
+          font_weight = null
+        }
+        variable {
+          color = colors.gray.n100
+          font_style = null
+          font_weight = null
+        }
+        constant {
+          color = colors.lighten(colors.blue.n300, 1.5)
+          font_style = null
+          font_weight = null
+        }
+        type {
+          color = colors.orange.n300
+          font_style = null
+          font_weight = null
+        }
+        constructor {
+          color = "#ffae65"
+        }
+      }
+      players = new Listing {
+        new PlayerColor {
+          cursor = colors.gray.n400
+          selection = colors.gray.n800 + "99"
+          background = colors.gray.n800 + "99"
+        }
+      }
+    }
+  }
+}
