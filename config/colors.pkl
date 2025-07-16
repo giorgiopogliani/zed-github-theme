@@ -4,10 +4,10 @@ import "pkl:math"
 
 debug = "#FF0000"
 
-white = "#FFFFFF"
+white = "#ffffff"
 
 gray {
-  n50 = "#f7fafb"
+  n50 = "#fbfbfb"
   n100 = "#e4ecf0"
   n200 = "#beced8"
   n300 = "#a1b3c0"

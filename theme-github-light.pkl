@@ -18,9 +18,9 @@ themes = new Listing {
       `border.selected` = colors.gray.n200
       `border.transparent` = colors.gray.n50
       `border.disabled` = colors.gray.n200
-      `elevated_surface.background` = colors.gray.n50
+      `elevated_surface.background` = colors.white
       `surface.background` = "#f0f3f6"
-      background = colors.white
+      background = colors.gray.n50
       `element.background` = colors.gray.n50
       `element.hover` = colors.blue.n50
       `element.active` = null
@@ -58,10 +58,10 @@ themes = new Listing {
       `scrollbar.track.background` = colors.white
       `scrollbar.track.border` = colors.gray.n100
       error = colors.rose.n400
-      warning = colors.amber.n300
-      `warning.background` = colors.yellow.n800
-      `warning.border` = colors.yellow.n800
-      `editor.background` = colors.white
+      warning = colors.yellow.n400
+      `warning.background` = colors.yellow.n500 + "66"
+      `warning.border` = colors.yellow.n500 + "66"
+      `editor.background` = colors.gray.n50
       `editor.foreground` = colors.gray.n950
       `editor.gutter.background` = colors.gray.n50
       `editor.subheader.background` = null
@@ -105,7 +105,7 @@ themes = new Listing {
       `predictive.background` = colors.gray.n500
       syntax {
         comment {
-          color = colors.gray.n500
+          color = colors.gray.n600
           font_style = null
           font_weight = null
         }
@@ -134,7 +134,7 @@ themes = new Listing {
           color = colors.lighten(colors.rose.n700, 10.0)
         }
         tag {
-          color = colors.rose.n500
+          color = colors.lighten(colors.rose.n700, 20.0)
         }
         punctuation {
           color = colors.gray.n950
