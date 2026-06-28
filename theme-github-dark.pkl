@@ -1,9 +1,8 @@
 amends "config/theme.pkl"
 
 import "config/colors.pkl"
-import "config/utils.pkl"
 
-name = "Github Inspired Theme 2"
+name = "Github Inspired Theme"
 
 author = "Giorgio Pogliani"
 
@@ -12,188 +11,188 @@ themes = new Listing {
     name = "My Github Dark v2"
     appearance = "dark"
     style {
-      border = colors.gray.n950
-      `border.variant` = colors.gray.n950
-      `border.focused` = colors.blue.n600
-      `border.selected` = colors.gray.n950
-      `border.transparent` = colors.gray.n950
-      `border.disabled` = colors.gray.n950
-      `elevated_surface.background` = colors.lighten(colors.gray.n900, 5.0)
-      `surface.background` = colors.gray.n950
-      background = colors.gray.n950
-      `element.background` = colors.gray.n950
-      `element.hover` = colors.gray.n950
-      `element.active` = null
-      `element.selected` = null
-      `element.disabled` = null
-      `drop_target.background` = null
+      border = colors.githubDark.borderMuted
+      `border.variant` = colors.githubDark.borderMuted
+      `border.focused` = colors.githubDark.accentMuted
+      `border.selected` = colors.githubDark.border
+      `border.transparent` = colors.githubDark.canvas + "00"
+      `border.disabled` = colors.githubDark.borderMuted
+      `elevated_surface.background` = colors.githubDark.elevated
+      `surface.background` = colors.githubDark.canvasSubtle
+      background = colors.githubDark.canvas
+      `element.background` = colors.githubDark.canvasSubtle
+      `element.hover` = colors.githubDark.elevated
+      `element.active` = colors.githubDark.overlay
+      `element.selected` = colors.githubDark.elevated
+      `element.disabled` = colors.githubDark.canvasSubtle + "80"
+      `drop_target.background` = colors.githubDark.accentMuted + "44"
       `ghost_element.background` = null
-      `ghost_element.hover` = colors.gray.n700 + "99"
-      `ghost_element.active` = null
-      `ghost_element.selected` = colors.gray.n600 + "99"
+      `ghost_element.hover` = colors.githubDark.elevated + "99"
+      `ghost_element.active` = colors.githubDark.overlay + "99"
+      `ghost_element.selected` = colors.githubDark.overlay + "99"
       `ghost_element.disabled` = null
-      text = colors.gray.n300
-      `text.muted` = colors.gray.n300
-      `text.placeholder` = colors.gray.n300
-      `text.disabled` = colors.gray.n500
-      `text.accent` = colors.blue.n300
-      icon = null
-      `icon.muted` = null
-      `icon.disabled` = null
-      `icon.placeholder` = null
-      `icon.accent` = null
-      `title_bar.background` = colors.lighten(colors.gray.n950, 0.0)
-      `status_bar.background` = colors.lighten(colors.gray.n950, 0.0)
-      `tab_bar.background` = colors.gray.n950
-      `tab.inactive_background` = colors.gray.n950
-      `toolbar.background` = colors.lighten(colors.gray.n950, 4.0)
-      `tab.active_background` = colors.lighten(colors.gray.n950, 4.0)
-      `search.match_background` = null
-      `panel.background` = colors.lighten(colors.gray.n950, 4.0)
-      `panel.focused_border` = null
-      `pane_group.border` = null
-      `scrollbar_thumb.background` = colors.gray.n900
-      `scrollbar.thumb.hover_background` = null
-      `scrollbar.thumb.border` = colors.lighten(colors.gray.n950, 4.0)
-      `scrollbar.track.background` = null
-      `scrollbar.track.border` = colors.lighten(colors.gray.n950, 4.0)
-      `editor.background` = colors.gray.n950
-      `editor.foreground` = colors.gray.n100
-      `editor.gutter.background` = colors.lighten(colors.gray.n950, 4.0)
-      `editor.subheader.background` = null
-      `editor.active_line.background` = colors.gray.n800 + "AA"
-      `editor.highlighted_line.background` = null
-      `editor.line_number` = colors.gray.n700
-      `editor.active_line_number` = colors.gray.n400
-      `editor.invisible` = null
-      `editor.wrap_guide` = colors.gray.n950
-      `editor.active_wrap_guide` = colors.gray.n950
-      `editor.document_highlight.read_background` = colors.amber.n300 + "22"
-      `editor.document_highlight.write_background` = null
-      `terminal.background` = colors.lighten(colors.gray.n950, 4.0)
-      `terminal.foreground` = colors.gray.n100
+      text = colors.githubDark.fg
+      `text.muted` = colors.githubDark.fgMuted
+      `text.placeholder` = colors.githubDark.fgSubtle
+      `text.disabled` = colors.githubDark.fgDisabled
+      `text.accent` = colors.githubDark.accent
+      icon = colors.githubDark.fgMuted
+      `icon.muted` = colors.githubDark.fgSubtle
+      `icon.disabled` = colors.githubDark.fgDisabled
+      `icon.placeholder` = colors.githubDark.fgSubtle
+      `icon.accent` = colors.githubDark.accent
+      `title_bar.background` = colors.githubDark.canvasSubtle
+      `status_bar.background` = colors.githubDark.canvasSubtle
+      `tab_bar.background` = colors.githubDark.canvas
+      `tab.inactive_background` = colors.githubDark.canvas
+      `toolbar.background` = colors.githubDark.canvasSubtle
+      `tab.active_background` = colors.githubDark.canvasSubtle
+      `search.match_background` = colors.githubDark.warningDark + "66"
+      `panel.background` = colors.githubDark.canvasSubtle
+      `panel.focused_border` = colors.githubDark.border
+      `pane_group.border` = colors.githubDark.borderMuted
+      `scrollbar_thumb.background` = colors.githubDark.overlay
+      `scrollbar.thumb.hover_background` = colors.githubDark.fgSubtle + "55"
+      `scrollbar.thumb.border` = colors.githubDark.canvasSubtle
+      `scrollbar.track.background` = colors.githubDark.canvas
+      `scrollbar.track.border` = colors.githubDark.borderMuted
+      error = colors.githubDark.danger
+      `error.background` = colors.githubDark.dangerDark + "44"
+      `error.border` = colors.githubDark.dangerDark + "66"
+      warning = colors.githubDark.warning
+      `warning.background` = colors.githubDark.warningDark + "44"
+      `warning.border` = colors.githubDark.warningDark + "66"
+      `editor.background` = colors.githubDark.canvas
+      `editor.foreground` = colors.githubDark.fg
+      `editor.gutter.background` = colors.githubDark.canvasSubtle
+      `editor.subheader.background` = colors.githubDark.canvasSubtle
+      `editor.active_line.background` = colors.githubDark.elevated + "99"
+      `editor.highlighted_line.background` = colors.githubDark.warningDark + "33"
+      `editor.line_number` = colors.githubDark.fgSubtle
+      `editor.active_line_number` = colors.githubDark.fg
+      `editor.invisible` = colors.githubDark.border
+      `editor.wrap_guide` = colors.githubDark.borderMuted
+      `editor.active_wrap_guide` = colors.githubDark.overlay
+      `editor.document_highlight.read_background` = colors.githubDark.warningDark + "33"
+      `editor.document_highlight.write_background` = colors.githubDark.warningDark + "44"
+      `terminal.background` = colors.githubDark.canvasSubtle
+      `terminal.foreground` = colors.githubDark.fg
       `terminal.bright_foreground` = colors.white
-      `terminal.dim_foreground` = colors.gray.n200
-      `terminal.ansi.black` = null
-      `terminal.ansi.red` = null
-      `terminal.ansi.green` = null
-      `terminal.ansi.yellow` = null
-      `terminal.ansi.blue` = null
-      `terminal.ansi.magenta` = null
-      `terminal.ansi.cyan` = null
-      `terminal.ansi.white` = colors.gray.n100
-      `terminal.ansi.bright_black` = colors.gray.n950
-      `terminal.ansi.bright_red` = null
-      `terminal.ansi.bright_green` = null
-      `terminal.ansi.bright_yellow` = null
-      `terminal.ansi.bright_blue` = null
-      `terminal.ansi.bright_magenta` = null
-      `terminal.ansi.bright_cyan` = null
-      `terminal.ansi.bright_white` = null
-      `link_text.hover` = colors.blue.n100
-      `hidden` = colors.gray.n400 + "66"
-      error = colors.red.n400
-      `error.background` = colors.red.n500 + "44"
-      `error.border` = colors.red.n500 + "44"
-      warning = colors.yellow.n400
-      `warning.background` = colors.yellow.n500 + "44"
-      `warning.border` = colors.yellow.n500 + "44"
-      hint = colors.gray.n400
-      `hint.background` = colors.blue.n500 + "44"
-      `hint.border` = colors.blue.n500 + "44"
-      ignored = colors.gray.n500 + "66"
-      modified = colors.blue.n300 + "88"
-      conflict = colors.yellow.n300 + "66"
-      created = colors.green.n300 + "66"
-      deleted = colors.red.n300 + "66"
-      `predictive.background` =  colors.gray.n700
+      `terminal.dim_foreground` = colors.githubDark.fgSubtle
+      `terminal.ansi.black` = colors.githubDark.canvasInset
+      `terminal.ansi.red` = colors.githubDark.danger
+      `terminal.ansi.green` = colors.githubDark.success
+      `terminal.ansi.yellow` = colors.githubDark.warning
+      `terminal.ansi.blue` = colors.githubDark.accent
+      `terminal.ansi.magenta` = colors.githubDark.done
+      `terminal.ansi.cyan` = colors.githubDark.cyan
+      `terminal.ansi.white` = colors.githubDark.fg
+      `terminal.ansi.bright_black` = colors.githubDark.fgSubtle
+      `terminal.ansi.bright_red` = colors.lighten(colors.githubDark.danger, 10.0)
+      `terminal.ansi.bright_green` = colors.lighten(colors.githubDark.success, 15.0)
+      `terminal.ansi.bright_yellow` = colors.lighten(colors.githubDark.warning, 15.0)
+      `terminal.ansi.bright_blue` = colors.lighten(colors.githubDark.accent, 10.0)
+      `terminal.ansi.bright_magenta` = colors.lighten(colors.githubDark.done, 8.0)
+      `terminal.ansi.bright_cyan` = colors.lighten(colors.githubDark.cyan, 10.0)
+      `terminal.ansi.bright_white` = colors.white
+      `link_text.hover` = colors.githubDark.accent
+      `hidden` = colors.githubDark.fgDisabled + "66"
+      hint = colors.githubDark.fgSubtle
+      `hint.background` = colors.githubDark.accentMuted + "44"
+      `hint.border` = colors.githubDark.accentMuted + "66"
+      ignored = colors.githubDark.fgDisabled + "66"
+      modified = colors.githubDark.accent + "88"
+      conflict = colors.githubDark.warning + "88"
+      created = colors.githubDark.success + "88"
+      deleted = colors.githubDark.danger + "88"
+      `predictive.background` = colors.githubDark.overlay
       syntax {
         comment {
-          color = colors.gray.n600
+          color = colors.githubDark.fgSubtle
           font_style = null
           font_weight = null
         }
         number {
-          color = colors.lighten(colors.blue.n400, 5.0)
+          color = colors.githubDark.accent
           font_style = null
           font_weight = null
         }
         builtin {
-          color = colors.red.n400
+          color = colors.githubDark.danger
         }
         string {
-          color = colors.lighten(colors.blue.n300, 1.5)
-          font_style = "blue"
+          color = colors.githubDark.string
+          font_style = null
           font_weight = null
         }
         `function` {
-          color = colors.purple.n300
+          color = colors.githubDark.done
           font_style = null
           font_weight = null
         }
         symbols {
-          color = colors.lighten(colors.blue.n300, 1.5)
+          color = colors.githubDark.string
         }
         keyword {
-          color = colors.lighten(colors.red.n500, 40.0)
+          color = colors.githubDark.danger
         }
         tag {
-          color = colors.red.n400
+          color = colors.githubDark.danger
         }
         punctuation {
-          color = colors.cyan.n100
+          color = colors.githubDark.fgMuted
           font_style = null
           font_weight = null
         }
         `punctuation.delimiter` {
-          color = colors.white
+          color = colors.githubDark.fg
           font_style = null
           font_weight = null
         }
         label {
-          color = colors.red.n400
+          color = colors.githubDark.danger
           font_style = null
           font_weight = null
         }
         boolean {
-          color = colors.blue.n100
+          color = colors.githubDark.accent
           font_style = null
           font_weight = null
         }
         operator {
-          color = colors.red.n400
+          color = colors.githubDark.danger
           font_style = null
           font_weight = null
         }
         property {
-          color = colors.lighten(colors.green.n500, 30.0)
+          color = colors.lighten(colors.githubDark.success, 20.0)
           font_style = null
           font_weight = null
         }
         variable {
-          color = colors.gray.n100
+          color = colors.githubDark.fg
           font_style = null
           font_weight = null
         }
         constant {
-          color = colors.lighten(colors.blue.n300, 1.5)
+          color = colors.githubDark.accent
           font_style = null
           font_weight = null
         }
         type {
-          color = colors.orange.n300
+          color = colors.githubDark.orange
           font_style = null
           font_weight = null
         }
         constructor {
-          color = colors.orange.n300
+          color = colors.githubDark.orange
         }
       }
       players = new Listing {
         new PlayerColor {
-          cursor = colors.gray.n400
-          selection = colors.gray.n800 + "99"
-          background = colors.gray.n800 + "99"
+          cursor = colors.githubDark.accent
+          selection = colors.githubDark.selection
+          background = colors.githubDark.elevated + "99"
         }
       }
     }

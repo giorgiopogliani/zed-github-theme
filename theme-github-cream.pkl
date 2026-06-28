@@ -1,0 +1,196 @@
+amends "config/theme.pkl"
+
+import "config/colors.pkl"
+
+name = "Github Cream Theme"
+
+author = "Giorgio Pogliani"
+
+themes = new Listing {
+  new Theme {
+    name = "My Github Cream v2"
+    appearance = "light"
+    style {
+      border = colors.cream.n600
+      `border.variant` = colors.cream.n600
+      `border.focused` = "#8bb8f7"
+      `border.selected` = colors.cream.n800
+      `border.transparent` = colors.cream.n100 + "00"
+      `border.disabled` = colors.cream.n700
+      `elevated_surface.background` = colors.cream.n50
+      `surface.background` = colors.cream.n300
+      background = colors.cream.n100
+      `element.background` = colors.cream.n200
+      `element.hover` = colors.cream.n400
+      `element.active` = colors.cream.n500
+      `element.selected` = colors.cream.n400
+      `element.disabled` = colors.cream.n300 + "80"
+      `drop_target.background` = "#fff0bd88"
+      `ghost_element.background` = null
+      `ghost_element.hover` = colors.cream.n400
+      `ghost_element.active` = colors.cream.n500
+      `ghost_element.selected` = colors.cream.n500
+      `ghost_element.disabled` = null
+      text = colors.brown.n950
+      `text.muted` = colors.brown.n900
+      `text.placeholder` = colors.brown.n750
+      `text.disabled` = colors.brown.n500
+      `text.accent` = colors.github.blue
+      icon = colors.brown.n900
+      `icon.muted` = colors.brown.n750
+      `icon.disabled` = colors.brown.n500
+      `icon.placeholder` = colors.brown.n750
+      `icon.accent` = colors.github.blue
+      `title_bar.background` = colors.cream.n250
+      `status_bar.background` = colors.cream.n250
+      `tab_bar.background` = colors.cream.n300
+      `tab.inactive_background` = colors.cream.n200
+      `toolbar.background` = colors.cream.n250
+      `tab.active_background` = colors.cream.n50
+      `search.match_background` = "#fff0bd"
+      `panel.background` = colors.cream.n200
+      `panel.focused_border` = colors.cream.n800
+      `pane_group.border` = colors.cream.n600
+      `scrollbar_thumb.background` = colors.cream.n950 + "66"
+      `scrollbar.thumb.hover_background` = colors.brown.n400 + "44"
+      `scrollbar.thumb.border` = colors.brown.n750 + "33"
+      `scrollbar.track.background` = colors.cream.n150
+      `scrollbar.track.border` = colors.cream.n600
+      error = colors.github.red
+      warning = colors.github.yellow
+      `warning.background` = "#fff0bd99"
+      `warning.border` = "#eac54f99"
+      `editor.background` = colors.cream.n100
+      `editor.foreground` = colors.brown.n950
+      `editor.gutter.background` = colors.cream.n200
+      `editor.subheader.background` = colors.cream.n250
+      `editor.active_line.background` = colors.cream.n500 + "99"
+      `editor.highlighted_line.background` = "#fff0bd66"
+      `editor.line_number` = colors.brown.n750
+      `editor.active_line_number` = colors.brown.n950
+      `editor.invisible` = colors.cream.n700
+      `editor.wrap_guide` = colors.cream.n700
+      `editor.active_wrap_guide` = colors.cream.n900
+      `editor.document_highlight.read_background` = "#f6d98f66"
+      `editor.document_highlight.write_background` = "#f6d98f88"
+      `terminal.background` = colors.cream.n150
+      `terminal.foreground` = colors.brown.n950
+      `terminal.bright_foreground` = colors.cream.n50
+      `terminal.dim_foreground` = colors.brown.n750
+      `terminal.ansi.black` = colors.brown.n950
+      `terminal.ansi.red` = colors.github.red
+      `terminal.ansi.green` = colors.github.green
+      `terminal.ansi.yellow` = colors.github.yellow
+      `terminal.ansi.blue` = colors.github.blue
+      `terminal.ansi.magenta` = colors.github.purple
+      `terminal.ansi.cyan` = colors.github.cyan
+      `terminal.ansi.white` = colors.cream.n300
+      `terminal.ansi.bright_black` = colors.brown.n750
+      `terminal.ansi.bright_red` = colors.github.redDark
+      `terminal.ansi.bright_green` = colors.github.greenDark
+      `terminal.ansi.bright_yellow` = colors.github.yellowDark
+      `terminal.ansi.bright_blue` = colors.github.blueBright
+      `terminal.ansi.bright_magenta` = colors.github.purpleBright
+      `terminal.ansi.bright_cyan` = colors.github.cyanDark
+      `terminal.ansi.bright_white` = colors.cream.n50
+      `link_text.hover` = colors.cream.n800
+      `hidden` = colors.brown.n500
+      hint = colors.brown.n750
+      ignored = colors.brown.n700
+      modified = colors.github.blueBright
+      conflict = colors.github.orange
+      created = colors.github.green
+      deleted = colors.github.red
+      `predictive.background` = colors.cream.n800
+      syntax {
+        comment {
+          color = colors.brown.n600
+          font_style = null
+          font_weight = null
+        }
+        number {
+          color = colors.github.blue
+          font_style = null
+          font_weight = null
+        }
+        builtin {
+          color = colors.github.blue
+        }
+        string {
+          color = colors.github.navy
+          font_style = null
+          font_weight = null
+        }
+        `function` {
+          color = colors.github.purple
+          font_style = null
+          font_weight = null
+        }
+        symbols {
+          color = colors.github.navy
+        }
+        keyword {
+          color = colors.github.red
+        }
+        tag {
+          color = colors.github.red
+        }
+        punctuation {
+          color = colors.brown.n950
+          font_style = null
+          font_weight = null
+        }
+        `punctuation.delimiter` {
+          color = colors.brown.n950
+          font_style = null
+          font_weight = null
+        }
+        label {
+          color = colors.github.red
+          font_style = null
+          font_weight = null
+        }
+        boolean {
+          color = colors.github.blue
+          font_style = null
+          font_weight = null
+        }
+        operator {
+          color = colors.github.blue
+          font_style = null
+          font_weight = null
+        }
+        property {
+          color = colors.github.blue
+          font_style = null
+          font_weight = null
+        }
+        variable {
+          color = colors.brown.n950
+          font_style = null
+          font_weight = null
+        }
+        constant {
+          color = colors.github.brown
+          font_style = null
+          font_weight = null
+        }
+        type {
+          color = colors.github.red
+          font_style = "italic"
+          font_weight = null
+        }
+        constructor {
+          color = colors.github.brown
+        }
+      }
+      players = new Listing {
+        new PlayerColor {
+          cursor = colors.github.blueBright
+          selection = "#8bb8f755"
+          background = colors.cream.n300
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ amends "config/theme.pkl"
 import "config/colors.pkl"
 import "config/utils.pkl"
 
-name = "Github Inspired Theme 2"
+name = "Github Inspired Theme"
 
 author = "Giorgio Pogliani"
 
@@ -105,7 +105,7 @@ themes = new Listing {
       `predictive.background` = colors.gray.n500
       syntax {
         comment {
-          color = colors.gray.n600
+          color = colors.gray.n500
           font_style = null
           font_weight = null
         }

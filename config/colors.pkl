@@ -37,6 +37,80 @@ neutral {
   n950 = "#181818"
 }
 
+cream {
+  n50 = "#fff7e8"
+  n100 = "#fbf1df"
+  n150 = "#fbefdd"
+  n200 = "#f8edda"
+  n250 = "#f7ead8"
+  n300 = "#f4e8d2"
+  n400 = "#f3eadc"
+  n500 = "#efe1cc"
+  n600 = "#eadfce"
+  n700 = "#dfd2bf"
+  n800 = "#d8c6ad"
+  n900 = "#cdbda4"
+  n950 = "#b8a98d"
+}
+
+brown {
+  n300 = "#b6aa98"
+  n400 = "#9d8e75"
+  n500 = "#8f826f"
+  n600 = "#7a6f5f"
+  n700 = "#746853"
+  n750 = "#6f6353"
+  n800 = "#5f574d"
+  n900 = "#463d33"
+  n950 = "#2d2926"
+}
+
+github {
+  blue = "#0550ae"
+  blueBright = "#0969da"
+  purple = "#8250df"
+  purpleBright = "#6639ba"
+  red = "#cf222e"
+  redDark = "#a40e26"
+  green = "#1a7f37"
+  greenDark = "#116329"
+  yellow = "#9a6700"
+  yellowDark = "#7d4e00"
+  orange = "#bc4c00"
+  brown = "#8a4600"
+  navy = "#0a3069"
+  cyan = "#1b7c83"
+  cyanDark = "#0f6a70"
+}
+
+githubDark {
+  canvas = "#22272e"
+  canvasSubtle = "#2d333b"
+  canvasInset = "#1c2128"
+  elevated = "#373e47"
+  overlay = "#444c56"
+  border = "#444c56"
+  borderMuted = "#373e47"
+  fg = "#cdd9e5"
+  fgMuted = "#adbac7"
+  fgSubtle = "#768390"
+  fgDisabled = "#636e7b"
+  accent = "#6cb6ff"
+  accentMuted = "#4184e4"
+  success = "#57ab5a"
+  successDark = "#46954a"
+  warning = "#daaa3f"
+  warningDark = "#c69026"
+  danger = "#ff938a"
+  dangerDark = "#e5534b"
+  done = "#dcbdfb"
+  doneDark = "#986ee2"
+  orange = "#f69d50"
+  string = "#96d0ff"
+  cyan = "#76e3ea"
+  selection = "#6cb6ff33"
+}
+
 transparent {
   n100 = "#24292eDD"
   n200 = "#24292e33"

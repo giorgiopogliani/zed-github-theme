@@ -1,12 +1,29 @@
 # Github Inspired Theme for Zed
 
-to build the theme you will need Pkl installed on your system. You can install it using brew:
+Install Pkl:
+
 ```bash
 brew install pkl
 ```
 
-then run the following command to build the theme:
+Build all themes:
+
 ```bash
-pkl eval theme-github-light.pkl --format json > github-light.json
-pkl eval theme-github-dark.pkl --format json > github-dark.json
+make
 ```
+
+Build one theme:
+
+```bash
+make light
+make cream
+make dark
+make darker
+```
+
+Generated themes:
+
+- `github-light.json` — `My Github Light v2`
+- `github-cream.json` — `My Github Cream v2`
+- `github-dark.json` — `My Github Dark v2`
+- `github-darker.json` — `My Github Darker v2`
